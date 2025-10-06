@@ -7,10 +7,10 @@
   - name: variables through prompt  # from prompt level
     prompt: what is your name?
     private: false
-  task: 
+  tasks: 
   - name: print course details
     ansible.builtin.debug:
-    msg: "Course Details: Course: {{ Course }}, {{ Duration }}, {{ Trainer }}"  
+      msg: "Course Details: Course: {{ Course }}, {{ Duration }}, {{ Trainer }}"  
     
 
       
