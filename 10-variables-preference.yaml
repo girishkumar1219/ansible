@@ -3,10 +3,10 @@
   connection: local
   vars_files:
   - course.yaml  # from course file
-  vars_prompt:
-  - name: variables through prompt  # from prompt level
-    prompt: what is your name?
-    private: false
+  # vars_prompt:
+  # - name: variables through prompt  # from prompt level
+  #   prompt: what is your name?
+  #   private: false
   tasks: 
   - name: print course details
     ansible.builtin.debug:
