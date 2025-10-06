@@ -7,10 +7,10 @@
     is_live: true
 
   
-  tools: # ["linux", "shell", "ansible"]
-  - "linux"
-  - shell
-  - ansible
+  tools:
+  - linux
+  - gitbash
+  - grafana
   concepts:
     cloud: aws
     cm: Ansible
