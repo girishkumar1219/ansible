@@ -11,8 +11,8 @@
   - shell scripting
   - gitbash
   concepts:
-    Ansible
-    Cloud
+    cloud: aws
+    cm: Ansible
   tasks:
   - name: print course info
     ansible.builtin.debug:
