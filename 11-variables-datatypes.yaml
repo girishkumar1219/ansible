@@ -7,13 +7,13 @@
     is_live: true
 
   tools: 
-  - linux 
-  - shell scripting
-  - gitbash
+    - linux 
+    - shell scripting
+    - gitbash
   concepts:
     cloud: aws
     cm: Ansible
   tasks:
   - name: print course info
     ansible.builtin.debug:
-      msg: "Course Details: Course: {{ Course }}, Duration: {{ Duration }}, is it live?: {{ is_live }}, tools we use: {{ tools }}, Concepts we teach: {{ Concepts }}"   
+      msg: "Course Details: {{ Course }}, Duration: {{ Duration }}, is it live?: {{ is_live }}, tools we use: {{ tools }}, Concepts we teach: {{ Concepts }}"   
