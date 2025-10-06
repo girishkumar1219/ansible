@@ -1,6 +1,6 @@
  #list of students data
 - name: "girish kumar"
-  dob: 21-05-1995
+  dob: "21-05-1995"
   age: 29
 
   addresses:
@@ -24,7 +24,7 @@
     - devops
 
 - name: "Sai Sirisha"
-  dob: 15-07-1997
+  dob: "15-07-1997"
   age: 25
 
   addresses:
