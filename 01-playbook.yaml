@@ -1,0 +1,8 @@
+- name: ping the server
+  host: local 
+  connections: local #Ansible is connecting through localhost 
+
+  #List of tasks
+  tasks: 
+  - name: ping
+    ansible.builtin.ping:
