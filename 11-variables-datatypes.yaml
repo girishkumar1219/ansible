@@ -6,10 +6,11 @@
     Duration: 120
     is_live: true
 
-  tools: 
-    - linux 
-    - shell scripting
-    - gitbash
+  
+  tools: # ["linux", "shell", "ansible"]
+  - "linux"
+  - shell
+  - ansible
   concepts:
     cloud: aws
     cm: Ansible
