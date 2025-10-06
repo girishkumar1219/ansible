@@ -5,8 +5,6 @@
     Course: "Devsecops"
     Duration: 120
     is_live: true
-
-  
   tools:
   - linux
   - gitbash
