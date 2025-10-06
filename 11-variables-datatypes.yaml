@@ -6,10 +6,13 @@
     Duration: 120
     is_live: true
 
-  tools: ["linux", "shell scripting", "gitbash"]
+  tools: 
+  - linux 
+  - shell scripting
+  - gitbash
   concepts:
-  - Ansible
-  - Cloud
+    Ansible
+    Cloud
   tasks:
   - name: print course info
     ansible.builtin.debug:
