@@ -1,0 +1,19 @@
+- name: Variables through Datatypes
+  hosts: local
+  connection: local
+  vars:
+    Course: "Devsecops"
+    Duration: 120
+    is_live: true
+
+  tools: 
+  - linux
+  - shell scripting
+  - gitbash
+  concepts:
+  - Ansible
+  - Cloud
+  tasks:
+  - name: print course info
+    ansible.builtin.debug:
+      msg: "Course Details: Course: {{ Course }}, Duration: {{ Duration }}, is it live?: {{ is_live }}, tools we use: {{ tools }}, Concepts we teach: {{ Concepts }}"   
