@@ -1,0 +1,51 @@
+ 
+
+#list of students data
+- name: "girish kumar"
+  dob: 21-05-1995
+  age: 29
+
+  addresses:
+    #object
+  
+  - doorno: 20-3-18/48
+    streetno: Siva jyothi nagar
+    city: Tirupathi  
+    pin: 517501
+    type: perm
+
+  - doorno: 20-3-18/48
+    streetno: Siva jyothi nagar
+    city: Tirupathi  
+    pin: 517501
+    type: current
+      
+  - Skills:
+    - java
+    - python
+    - devops
+
+- name: "Sai Sirisha"
+  dob: 15-07-1997
+  age: 25
+
+  addresses:
+    #object
+  
+  - doorno: 20-3-18/48
+    streetno: Siva jyothi nagar
+    city: Tirupathi  
+    pin: 517501
+    type: perm
+
+  - doorno: 20-3-18/48
+    streetno: Siva jyothi nagar
+    city: Tirupathi  
+    pin: 517501
+    type: current
+      
+  - Skills:
+    - java
+    - python
+    - devops
+
