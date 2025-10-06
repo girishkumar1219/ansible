@@ -1,0 +1,16 @@
+- name: variable preference
+  hosts: local
+  connection: local
+  vars_files:
+  - course.yaml  # from course file
+  vars_prompt:
+  - name: variables through prompt  # from prompt level
+    prompt: what is your name?
+    private: false
+  task: 
+  - name: print course details
+    ansible.builtin.debug:
+    msg: "Course Details: Course: {{ Course }}, {{ Duration }}, {{ Trainer }}"  
+    
+
+      
