@@ -1,0 +1,19 @@
+- name: print names in loop
+  hosts: local
+  connection: local
+  
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+      name: "{{ item }}"
+      state: present
+  loop: #people in funny family under 40 years
+  - giri
+  - siri
+  - balaji
+  - charan
+  - mithun
+  - mehira
+  - dharwik
+  - dhanvish
+  - teja
