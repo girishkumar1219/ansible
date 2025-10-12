@@ -3,10 +3,11 @@
   connection: local
   become: yes
   tasks: 
-  - name: check user present or not 
+  - name: checking whether user present or not 
     ansible.builtin.command: id roboshop
     register: user_output
     ignore_error: true
+    
   - name: print user_output
     ansible.builtin.debug:
       msg: "{{ user_output }}"
