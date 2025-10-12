@@ -52,4 +52,15 @@
       dest: ./student-data.json
       content: "{{ student_yaml | to_json }}"
       
- 
+  - name: convert to upper case
+    ansible.builtin.debug:
+      msg: "{{ name | upper }}"
+
+  - name: convert to lower case
+    ansible.builtin.debug:
+      msg: "{{ name | lower }}"
+
+  - name: check ip address is correct or not 
+    ansible.builtin.debug:
+      msg: "{{ ip_address | ansible.utils.ipaddr }}"
+  
