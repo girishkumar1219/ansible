@@ -17,24 +17,24 @@
     - key: Environment
       value: dev
   tasks: 
-  #print default variable
+  # print default variable
   - name: Default variable
     ansible.builtin.debug:
       msg: "{{ name | default(Sai Sirisha) }}"
   
-  #string into list
+  # string into list
   - name: Converting string into list
-    ansible.builtin.spilt:
-      msg: "{{ technologies | split(',') }}"
+    ansible.builtin.debug:
+      msg: "Technologies are: {{ technologies | split(',') }}"
 
-  #Dictionary into List
+  # Dictionary into List
   - name: Dictionary into List
-    ansible.builtin.dict2items:
+    ansible.builtin.debug:
       msg: "Tags are: {{ tags | dict2items }}"  
 
-  #List to Dictionary
+  # List to Dictionary
   - name: List to Dictionary
-    ansible.builtin.items2dict:
+    ansible.builtin.debug:
       msg: "maps are : {{ listTags | items2dict }}"
 
   #formatting yaml to json
