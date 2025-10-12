@@ -5,7 +5,7 @@
     technologies: Devops, Linux, Shell, Ansible #string
     name: "Girish Kumar"
     gmail: girishkumar@GMAIL.COM
-    ip_address: "19222.168.0.1"
+    ip_address: "192.168.0.1"
    #dictionary == map
     tags:
       Application: payment
@@ -71,3 +71,12 @@
   - name: print command_output
     ansible.builtin.debug:
       msg: "{{ command_output }}"    
+
+  - name: Redirection of command 
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
+    register: redirection_output
+
+  - name: print redirection_output
+    ansible.builtin.debug:
+      msg: "{{ redirection_output }}"
+ 
