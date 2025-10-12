@@ -47,5 +47,10 @@
     ansible.builtin.debug:
       msg: "Json: {{ student_yaml | to_json }}"
 
+  - name: copy json to file
+    ansible.builtin.copy:
+      src: "{{ student_yaml | to_nice_json }}"
+      dest: ./studentdata.json    
+
 
  
