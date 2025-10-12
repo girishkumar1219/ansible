@@ -20,7 +20,7 @@
   # print default variable
   - name: Default variable
     ansible.builtin.debug:
-      msg: "{{ name | default(Sai Sirisha) }}"
+      msg: "{{ name | default('Sai Sirisha') }}"
   
   # string into list
   - name: Converting string into list
