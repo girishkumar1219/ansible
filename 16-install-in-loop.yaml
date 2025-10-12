@@ -6,7 +6,7 @@
   - name: Install multiple packages
     ansible.builtin.package:
       name: "{{ item }}"
-      state: latest
+      state: present
     loop:
       - nginx
       - nodejs
