@@ -4,16 +4,15 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-      name: "{{ item }}"
-      state: present
-  loop: #people in funny family under 40 years
-  - giri
-  - siri
-  - balaji
-  - charan
-  - mithun
-  - mehira
-  - dharwik
-  - dhanvish
-  - teja
-  - sasi
+      msg: "Hello {{ item }}" #item is reservered 
+    loop: #people in funny family under 40 years
+    - giri
+    - siri
+    - balaji
+    - charan
+    - mithun
+    - mehira
+    - dharwik
+    - dhanvish
+    - teja
+    - sasi
