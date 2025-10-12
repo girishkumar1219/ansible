@@ -1,0 +1,51 @@
+- name: functions
+  hosts: local
+  connection: local
+  vars: 
+    technologies: Devops, Linux, Shell, Ansible #string
+    name: "Girish Kumar"
+    gmail: girishkumar@GMAIL.COM
+    ip address: "19222.168.0.1"
+   # dictionary == map
+    tags:
+      Application: payment
+      Environment: dev
+    # List
+    listTags:
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev
+  tasks: 
+  #print default variable
+  - name: Default variable
+    ansible.builtin.debug:
+    msg: "{{ name | default(Sai Sirisha) }}"
+  
+  #string into list
+  - name: Converting string into list
+    ansible.builtin.spilt:
+    msg: "{{ technologies | split(',') }}"
+
+  #Dictionary into List
+  - name: Dictionary into List
+    ansible.builtin.dict2items:
+    msg: "Tags are: {{ tags | dict2items }}"  
+
+  #List to Dictionary
+  - name: List to Dictionary
+    ansible.builtin.items2dict:
+    msg: "maps are : {{ listTags | items2dict }}"
+
+  #formatting yaml to json
+  
+  - name: read in yaml and convert to variable #variable=student_yaml
+    ansible.builtin.set_fact:
+      student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
+
+  - name: convert yaml to json
+    ansible.builtin.debug:
+      msg: "Json: {{ student_yaml | to_json }}"
+
+
+ 
